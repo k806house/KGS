@@ -1,5 +1,4 @@
 import "./App.css";
-import { LeaderBoard } from "./Components/LeaderBoard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Board from "./Components/Board";
 
@@ -9,9 +8,8 @@ function App() {
       <div>
         <div className="App">
         <Switch>
-          <Route path="/board/:gameId" component={Board}/>
           <Route path="/">
-            <LeaderBoard />
+            <Board />
           </Route>
         </Switch>
         </div>
